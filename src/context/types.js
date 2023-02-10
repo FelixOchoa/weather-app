@@ -1,0 +1,3 @@
+export const SEARCH_CITY = "SEARCH_CITY";
+export const SET_SELECTED_CITY = "SET_SELECTED_CITY";
+export const SET_TEMP_UNIT = "SET_TEMP_UNIT";

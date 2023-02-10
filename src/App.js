@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import WeatherState from "./context/Weather/WeatherState";
+import Weather from "./components/Weather";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WeatherState>
+      <div className="p-12 bg-gray-400/50 min-h-screen max-w-full">
+        <Weather />
+      </div>
+    </WeatherState>
   );
-}
+};
 
 export default App;
